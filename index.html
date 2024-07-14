@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">		<title>Aplikasi Kebutuhan Matkul</title>
+		<link rel="stylesheet" href="assets/style.css">
+		
+		
+		<!-- Quicksand -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+		
+		<!-- Kode Mono -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Quicksand:wght@700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+		
+	</head>
+	
+	<body>
+		<header class="navbar-container">
+			<div class="jumbotron">
+				<h1>Aplikasi Kebutuhan Matkul</h1>
+			</div>
+			<nav>
+				<ul>
+					<li>
+						<a href="#sysrec">System Requirements</a>
+					</li>
+					<li>
+						<a href="#runtime">Runtime</a>
+					</li>
+					<li>
+						<a href="#matakuliah">Matakuliah</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		
+		<main>
+			<div id="content">
+				<div id="content-header">
+					<div id="post-title">
+						<h1>Aplikasi Kebutuhan Matkul</h1>
+						<p><a href="#">@asyrianirya</a>, Februari 2024</p>
+					</div>
+					<div id="post-explain">
+						<p>Blog ini saya tulis dengan harapan dapat menyelesaikan permasalahan teman teman yang merasa kesulitan dalam mencari link download aplikasi yang dibutuhkan selama matakuliah semester 3 ini berlangsung.</p>
+					</div>
+					
+				</div>
+				<article class="card">
+					
+					<h2 class="title" id="sysrec">System Requirements</h2>
+					
+					<p>Spek sistem laptopku:</p>
+					<figure class="center">
+						<img draggable="false" src="assets/img/spek.png" alt="Windows 10 Pro 32-bit Processor Intel(R) Celeron(R) CPU B820 @ 1.70GHz (2 CPUs), ~1.7GHz Memor 4096MB RAM">
+						<figcaption class="small">Kebanyakan aplikasi disini berdasarkan spek laptop saya, jadi jika laptop anda lebih rendah speknya dari ini, tidak menjamin aplikasinya bisa berjalan dengan lancar. Sebaliknya jika spek laptopmu lebih canggih dari ini, saya sarankan untuk meningkatkan beberapa aplikasi dengan versi terbaru.</figcaption>
+					</figure>
+					
+				</article>
+				<article class="card">
+					
+					<h2 class="title" id="runtime">RUNTIME</h2>
+					
+					<section class="runtime">
+						<h3>VCREDIST (VISUAL C++ REDISTRIBUTABLE)</h3>
+						<p>Untuk Windows 32 dan 64bit</p>
+						<figure class="center">
+							<img draggable="false" src="assets/img/vcr.png">
+							<figcaption class="small">Untuk linknya silahkan klik <a href="https://learn.microsoft.com/id-id/cpp/windows/latest-supported-vc-redist?view=msvc-170">disini</a><br>
+							Download sesuai kebutuhan - disarankan Visual Studio 2015, 2017, 2019, dan 2022</figcaption>
+						</figure>
+					</section>
+					
+					<section class="runtime">
+						<h3>JRE (JAVA SE RUNTIME ENVIRONTMENT) dan JDK (JAVA SE DEVELOPMENT KIT) 8u381</h3>
+						<p>Untuk JRE, halaman resminya <a href="https://www.java.com/en/download/windows_manual.jsp">klik disini</a></p>
+						<figure class="center">
+							<img draggable="false" src="assets/img/jre.png">
+							<figcaption class="small">Windows online direkomendasikan - Kamu perlu koneksi internet saat menginstal menggunakan Java Windows Online Installer</figcaption>
+						</figure>
+						<p>Khusus untuk JDK, klik disini untuk mendownload <a href="https://javadl.oracle.com/webapps/download/GetFile/1.8.0_381-b09/8c876547113c4e4aab3c868e9e0ec572/windows-i586/jdk-8u381-windows-i586.exe">JDK 8 Update 381 versi 32bit</a></p>
+					</section>
+					
+					<section class="runtime">
+						<h3>.NET FRAMEWORK 3.5</h3>
+						<p>Terhubunglah ke internet, buka Command Prompt sebagai Administrator dan ketikkan:</p>
+						<blockquote>DISM /Online /Enable-Feature /FeatureName:NetFx3 /All</blockquote>
+						<p>Atau download melalui <a href="https://dotnet.microsoft.com/en-us/download/dotnet-framework/net35-sp1">link ini</a></p>
+					</section>
+				</article>
+				<article class="card" id="matakuliah">
+					<h2 class="title">Matakuliah</h2>
+					<section class="matakuliah">
+						<h3>Pemrograman Berorientasi Objek dasar (Ujikom JSE)</h3>
+						<ul>
+							<li>
+								<p>ALICE 3.6.0.3 (32bit)</p>
+								<a href="https://www.alice.org/wp-content/uploads/2021/10/alice3_windows_installer_3_6_0_3.exe" class="btn">Link Download</a>
+								<a href="https://www.alice.org/get-alice/alice-3/" class="btn">Halaman Resmi</a>
+							</li>
+							<li>
+								<p>Greenfoot 3.5.4 (32bit)</p>
+								<a href="https://www.greenfoot.org/download/files/old/Greenfoot-windows-354.msi" class="btn">Link Download</a>
+								<a href="https://www.greenfoot.org/download" class="btn">Halaman Resmi</a>
+							</li>
+							<li>
+								<p>Eclipse</p>
+								<a href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/helios/SR1/eclipse-java-helios-SR1-win32.zip" class="btn">32bit (2010-9)</a>
+								<a href="https://www.eclipse.org/downloads/packages/release/helios/sr1/eclipse-ide-java-developers" class="btn">Halaman Resmi</a>
+							</li>
+						</ul>
+					</section>
+					<section class="matakuliah">
+						<h3>Matakuliah Data Science</h3>
+						<a href="https://my.rapidminer.com/nexus/account/index.html#downloads" class="btn">Rapidminer</a>
+						<p><i>Untuk memakainya, kamu perlu mempunyai akun terlebih dahulu</i></p>
+						<p>Belum punya akun? <a href="https://www.youtube.com/results?search_query=cara+buat+akun+rapidminer">cek</a></p>
+					</section>
+					<section class="matakuliah">
+						<ul>
+							<li>
+								<p>XAMPP</p>
+								<a href="https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/7.3.2/" class="btn">xampp-win32-7.3.2-0-VC15-installer</a>
+								<a href="https://www.apachefriends.org/download.html" class="btn">Halaman Resmi</a>
+							</li>
+							<li>
+								<p>Text Editor/IDE</p>
+								<a href="https://www.sublimetext.com/3" class="btn">Sublime Text3</a>
+								<a href="https://notepad-plus-plus.org/downloads/" class="btn">Notepad++</a>
+								<a href="https://code.visualstudio.com/" class="btn">Visual Studio Code</a>
+							</li>
+							<li>
+								<p>Browser</p>
+								<a href="https://www.mozilla.org/id/firefox/new/" class="btn">Mozilla Firefox</a>
+								<a href="https://www.google.com/intl/id_id/chrome/" class="btn">Google Chrome</a>
+								<a href="https://www.opera.com/id/download" class="btn">Opera Browser</a>
+								<a href="https://www.microsoft.com/en-us/edge/download" class="btn">Microsoft Edge</a>
+							</li>
+						</ul>
+					</section>
+				</article>
+			</div>
+			
+		<aside>
+			<article class="card small">
+				<header>
+					<h2>My Profile</h2>
+					<img src="data:image/jpeg;base64," alt="Author" oncontextmenu="return false;" draggable="false">
+				</header>
+				<section>
+					<table border="0">
+					<tr>
+						<td>Nama</td>
+						<td>:</td>
+						<td>Anon</td>
+					</tr>
+					<tr>
+						<td>Prodi</td>
+						<td>:</td>
+						<td>Tekno</td>
+					</tr>
+					<tr>
+						<td>Nama Kampus</td>
+						<td>:</td>
+						<td>PRO TEC</td>
+					</tr>
+				</table>
+				</section>
+			</article>
+		</aside>
+		
+		</main>
+		
+		<footer>
+			<p>2024 by Asyrianirya</p>
+		</footer>
+		
+	</body>
+</html>
+

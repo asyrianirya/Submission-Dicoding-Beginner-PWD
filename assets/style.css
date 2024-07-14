@@ -1,0 +1,176 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+	
+	margin: 0;
+	padding: 0;
+	background-color: #2B3035;
+}
+
+footer {
+	padding: 1px;
+	color: white;
+	background-color: #000000;
+	
+	text-align: center;
+	font-weight: bold;
+}
+
+
+nav a {
+	font-size: 18px;
+	
+	text-decoration: none;
+	
+	color: white;
+}
+
+nav a:hover {
+	font-size: 18px;
+	font-weight: 700;
+	color: gray;
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+}
+ 
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav {
+	background-color: #000000;
+	padding: 5px;
+	position: sticky;
+	
+	top: 0;
+}
+
+.jumbotron {
+	font-size: 20px;
+	padding: 60px;
+	background-color: black;
+	text-align: center;
+	color: white;
+}
+
+main {
+	padding: 20px;
+	
+	display: flex;
+	background-color: #2B3035;
+	color: white;
+	gap: 1.5rem;
+}
+
+header {
+	display: inline;
+}
+
+#content {
+	flex: 5;
+	
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 1rem 2rem;
+}
+
+#post-title h1,
+#post-title p {
+	margin: 0px;
+}
+
+.small {
+	font-size: 0.8em;
+}
+
+.center {
+	text-align: center;
+	justify-content: center;
+}
+
+blockquote {
+	font-family: "Kode Mono", monospace;
+	background-color: gray;
+	padding: 5px;
+}
+
+
+aside {
+	flex: 1;
+}
+
+article {
+	padding: 20px;
+	margin-bottom: 10px;
+}
+
+article .title {
+	border-bottom: 2px solid white;
+}
+
+.card {
+	border-radius: 5px 20px 5px 20px;
+	background-color: #2B3035;
+	box-shadow: 4px 15px 20px 5px rgba(0,0,0,0.74);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #808080;
+    color: #fff; 
+    text-decoration: none; 
+    border: 1px solid #808080;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.btn:hover {
+    background-color: black;
+    border-color: black;
+    color: #fff; 
+}
+
+img {
+	max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+	main {
+		flex-flow: column nowrap;
+	}
+	main aside {
+		align-self: center;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	main aside {
+		align-self: stretch;
+	}
+	
+	    .navbar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+		justify-content: center;
+    }
+
+    nav li {
+        margin: 5px 0;
+    }
+}
